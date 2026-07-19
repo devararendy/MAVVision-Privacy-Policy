@@ -36,20 +36,22 @@
 <body>
 
     <h1>Privacy Policy for MAVVision</h1>
-    <p><strong>Last Updated:</strong> July 8, 2026</p>
+    <p><strong>Last Updated:</strong> July 20, 2026</p>
 
     <p>MAVVision ("the App") is provided by <strong>devararendy</strong> as a tool for connecting MAVLink telemetry and streaming camera data. This page informs you of our policies regarding the collection, use, and disclosure of personal information for anyone using our service.</p>
 
     <h2>1. Information Collection and Use</h2>
     <p>MAVVision is designed as a "bridge" application. <strong>We do not collect, store, or transmit any of your personal data to external servers.</strong> All data processing (MAVLink telemetry and Video Streaming) happens locally on your device or is transmitted directly to the IP addresses/ports specified by you.</p>
 
-    <h2>2. Permissions Used</h2>
-    <p>To provide its core functionality, the App requires the following permissions:</p>
+    <h2>2. Permissions and Data Usage</h2>
+    <p>To provide its core functionality, especially when the device is attached to a Remote Controlled (RC) vehicle, the App requires the following permissions:</p>
     <ul>
-        <li><strong>Camera:</strong> Used solely to capture video for the FPV (First Person View) stream. We do not record or store this video without your explicit action.</li>
+        <li><strong>Camera:</strong> Used to capture video for the FPV (First Person View) stream. Video is processed in real-time and only recorded to local storage if explicitly triggered by the user.</li>
+        <li><strong>Microphone (Foreground & Background):</strong> Required for capturing audio to be synchronized with the video stream and local recordings. Because the app is often used while the phone is attached to an RC vehicle, microphone access must remain active in the foreground/background to ensure uninterrupted audio capture based on user configuration.</li>
+        <li><strong>Location (Foreground Service):</strong> Used solely to access system APIs for checking WiFi and Cellular signal levels. This data is displayed on the On-Screen Display (OSD) to ensure the operator is aware of signal drops while the phone is operating on the vehicle. <strong>Precise location data is NOT collected, tracked, or shared.</strong></li>
         <li><strong>Network (Local & Internet):</strong> Used to establish TCP/UDP connections for MAVLink telemetry and video streaming.</li>
         <li><strong>USB/Serial:</strong> Used to communicate with flight controllers or telemetry radios via USB-OTG.</li>
-        <li><strong>In-App Purchases (Billing):</strong> Used to process transactions via the Google Play Store.</li>
+        <li><strong>In-App Purchases (Billing):</strong> Used to process transactions for "Pro" features via the Google Play Store.</li>
     </ul>
 
     <div class="disclaimer-box">
@@ -57,7 +59,7 @@
         <p>MAVVision is a tool intended for use with Remote Controlled (RC) vehicles, including but not limited to <strong>RC Cars, Boats, and Planes.</strong></p>
         <ul>
             <li><strong>Pilot Responsibility:</strong> The user (the "Pilot") is solely responsible for the safe operation of any vehicle connected to this App.</li>
-            <li><strong>Assumption of Risk:</strong> Using this App for FPV (First Person View) navigation and MAVLink bridging involves inherent risks. By using this App, you acknowledge that hardware failures, software bugs, or signal interference can occur.</li>
+            <li><strong>Assumption of Risk:</strong> Using this App for FPV navigation and MAVLink bridging involves inherent risks. By using this App, you acknowledge that hardware failures, software bugs, or signal interference can occur.</li>
             <li><strong>Limitation of Liability:</strong> The developer of MAVVision shall not be held responsible for any damage to property, personal injury, legal infractions, or any other incidents resulting from the use of this application. You are responsible for complying with all local aviation and radio frequency regulations.</li>
         </ul>
     </div>
